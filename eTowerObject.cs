@@ -83,10 +83,4 @@
             public string referenceNo { get; set; }
             public string trackingNo { get; set; }
         }
-         
-        public List<eTower.eTowerLabelRequest> GetEtowerLabelByExternalRef(long external_ref)
-        {
-            eTower.eTowerLabelRequest x = new eTower.eTowerLabelRequest();
-            x.id = external_ref.ToString();
-            return new List<eTower.eTowerLabelRequest>() { x };
-        }
+
