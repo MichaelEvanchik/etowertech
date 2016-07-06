@@ -1,3 +1,8 @@
+        public class eTowerLabelRequest
+        {
+            public string id { get; set; }
+        }
+        
         public class orderItemShipping
         {
             public string itemNo { get; set; }
