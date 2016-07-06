@@ -115,4 +115,12 @@ public class eTowerPost
             }
             return Convert.ToBase64String(hashedValue);
         }
+        
+                 
+        public List<eTower.eTowerLabelRequest> GetEtowerLabelByExternalRef(long external_ref)
+        {
+            eTower.eTowerLabelRequest x = new eTower.eTowerLabelRequest();
+            x.id = external_ref.ToString();
+            return new List<eTower.eTowerLabelRequest>() { x };
+        }
 }
